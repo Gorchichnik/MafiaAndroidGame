@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay_me_down"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".BeginingOfMaster">
+
+    <LinearLayout
+        android:id="@+id/lay_out"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorDay"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:text="меню"
+            android:textColor="@color/colorNight"
+            android:background="@android:color/transparent"/>
+
+        <fragment
+            android:id="@+id/fragment4"
+            android:name="com.example.secondapp.BlankFragmentStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <fragment
+            android:id="@+id/fragment"
+            android:name="com.example.secondapp.BlankFragmentRealyBlank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <fragment
+            android:id="@+id/fragment3"
+            android:name="com.example.secondapp.BlankFragmentRealyBlank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <fragment
+            android:id="@+id/fragment5"
+            android:name="com.example.secondapp.BlankFragmentRealyBlank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <fragment
+            android:id="@+id/fragment6"
+            android:name="com.example.secondapp.BlankFragmentRealyBlank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <fragment
+            android:id="@+id/fragment7"
+            android:name="com.example.secondapp.BlankFragmentRealyBlank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="369dp"
+                android:layout_marginBottom="-80dp"
+                android:src="@drawable/day_town" />
+
+            <Button
+
+
+                android:id="@+id/city_sleep"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:drawable/screen_background_dark_transparent"
+                android:text="Город засыпает"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
